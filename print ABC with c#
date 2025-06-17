@@ -1,0 +1,12 @@
+# Visual-C-sharp
+A course started in june 17 year 225
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("Try programiz.pro");
+    }
+}
