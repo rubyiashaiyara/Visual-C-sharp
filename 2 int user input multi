@@ -1,0 +1,19 @@
+using System;
+namespace Number
+{
+    public class b
+    {
+        public static void Main(string[] args)
+        {
+            Console. WriteLine("Enter 1st num");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            
+            Console. WriteLine("Enter 2nd num");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            
+            int product = num1 * num2;
+            
+            Console.WriteLine("The multiplication of " + num1 + "&" + num2 + "is:" + product);
+        }
+    }
+}
