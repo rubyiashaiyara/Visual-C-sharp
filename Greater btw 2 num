@@ -1,0 +1,27 @@
+using System;
+namespace A
+{
+    class A
+    {
+    public static void Main(string[] args)
+    {
+        int num1 = Convert.ToInt32(Console.ReadLine());
+        int num2 = Convert.ToInt32(Console.ReadLine());
+       
+        if(num1 > num2)
+        {
+            Console.WriteLine(num1 +
+            "is greater then "+ num2);
+        }
+        else if(num2 > num1)
+        {
+                Console.WriteLine(num2 +
+            "is greater then "+ num1);
+        }
+        else
+        {
+            Console.WriteLine("Error");
+        }
+    }
+}
+}
