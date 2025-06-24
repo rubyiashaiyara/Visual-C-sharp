@@ -1,0 +1,49 @@
+using System;
+
+namespace a
+{
+    class b
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Enter an alphabet: ");
+            string input = Console.ReadLine();
+
+            // Check if input is a single character
+            if (input.Length == 1)
+            {
+                char abc = input[0];
+
+                // Check if the character is a letter
+                if (Char.IsLetter(abc))
+                {
+                    // Convert to lowercase for uniformity
+                    abc = Char.ToLower(abc);
+
+                    // Check if the character is a vowel
+                    switch (abc)
+                    {
+                        case 'a':
+                        case 'e':
+                        case 'i':
+                        case 'o':
+                        case 'u':
+                            Console.WriteLine("Vowel");
+                            break;
+                        default:
+                            Console.WriteLine("Consonant");
+                            break;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Error: Please enter a valid alphabet letter.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Error: Please enter exactly one character.");
+            }
+        }
+    }
+}
