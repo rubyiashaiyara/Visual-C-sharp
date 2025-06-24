@@ -1,0 +1,29 @@
+using System;
+namespace a
+{
+    public class b
+    {
+        public static void Main(string[] args)
+        {
+            Console.Write("Enter a number : ");
+            
+            
+            if (int.TryParse(input, out int num))
+            {
+               
+                if(num%2==0)
+                {
+                    Console.WriteLine("The Number is Even");
+                }
+                else
+                {
+                    Console.WriteLine("The number is not even");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Error. Please enter an integer number.");
+            }
+        }
+    }
+}
