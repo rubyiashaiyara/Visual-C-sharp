@@ -1,0 +1,60 @@
+using System;
+
+class Week
+
+{
+   public enum Day //public class drkr nae cz enum a coma(,)use kra onk gula variablr neya jae only onno kono function a naoya jae na
+    {
+        sat,sun,mon,tues,wed,thrus,fri//Enumeration a void main a drkr hoi na 
+    }
+    
+    public void Method(Day d)
+    {
+        switch(d)
+        {
+            case Day.sat:
+            Console.WriteLine("Today is saturday");
+            break;
+            
+            case Day.sun:
+            Console.WriteLine("Today is sunday");
+            break;
+            
+            case Day.mon:
+            Console.WriteLine("Today is Monday");
+            break;
+            
+            case Day.tues:
+            Console.WriteLine("Today is Tuesday");
+            break;
+        
+            case Day.wed:
+            Console.WriteLine("Today is Wednusday");
+            break;
+            
+            case Day.thrus:
+            Console.WriteLine("Today is Thrusday");
+            break;
+        }
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Week obj = new Week();
+        
+        obj.Method(Week.Day.sat);
+        
+        obj.Method(Week.Day.sun);
+        
+        obj.Method(Week.Day.mon);
+        
+        obj.Method(Week.Day.tues);
+        
+        obj.Method(Week.Day.wed);
+        
+        obj.Method(Week.Day.thrus);
+    }
+}
