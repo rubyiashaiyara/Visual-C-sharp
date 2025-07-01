@@ -1,0 +1,42 @@
+using System;
+namespace a
+{
+    public class b
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Enter day Number");
+            int DayNumber = Convert.ToInt32(Console.ReadLine());
+            
+            switch(DayNumber)
+            {
+                case 1:
+                Console.WriteLine("Saturday");
+                break;
+                 case 2:
+                Console.WriteLine("Sunday");
+                break;
+                 case 3:
+                Console.WriteLine("Monday");
+                break;
+                 case 4:
+                Console.WriteLine("Tuesday");
+                break;
+                 case 5:
+                Console.WriteLine("Wednusday");
+                break;
+                 case 6:
+                Console.WriteLine("Thrusday");
+                break;
+                 case 7:
+                Console.WriteLine("Friday");
+                break;
+                
+                default:
+                Console.WriteLine("PLease Enter A integer Number");
+                break;
+                
+            }
+        }
+    }
+}
