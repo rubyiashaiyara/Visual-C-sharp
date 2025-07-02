@@ -1,0 +1,26 @@
+using System 
+namespace A
+{
+    public class B
+    {
+        public static void Main()
+        {
+            Console.WriteLine("Please Enter Number Length");
+            int size=Convert.ToInt32(Console.ReadLine());
+            
+            int[] num=new int[size];
+            
+            for(int i=0;i<size;i++)
+            {
+                Console.WriteLine("The number is "+i);
+                num[i]=ConvertToInt32(Console.ReadLine());
+            }
+            
+            Console.WriteLine("Your Entiring numbers are:");
+            for(int i=0;i<size;i++)
+            {
+                Console.WriteLine(numbers[i]);
+            }
+        }
+    }
+}
