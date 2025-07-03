@@ -1,0 +1,22 @@
+using System;
+namespace A
+{
+    public class b
+    {
+        public static void Main()
+        {
+            string  name="Rubiaya Shaiyara";
+            int age=24;
+            double gpa=3.25;
+            bool isRegistered=true;
+            char bloodGroup ='o';
+            
+    
+            Console.WriteLine(name);
+            Console.WriteLine(age);
+            Console.WriteLine(gpa);
+            Console.writeLine(isRegistered);
+            Console.WriteLine(bloodGroup);
+        }
+    }
+}
