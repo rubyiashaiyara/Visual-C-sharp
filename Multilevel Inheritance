@@ -1,0 +1,39 @@
+using System;
+
+class Mother
+{
+    public void cook()
+    {
+        Console.WriteLine("Mother can cook well");
+    }
+}
+
+class Daughter:Mother
+{
+    public void edu()
+    {
+        Console.WriteLine("Daughter have education");
+    }
+}
+
+class granddaughter:Daughter
+{
+    public void eat()
+    {
+        Console.WriteLine("Granddaughter love to eat");
+    }
+}
+
+class program
+{
+    static void Main(string[] args)
+    {
+        granddaughter gd =new granddaughter();
+        
+        gd.cook();
+        gd.edu();
+        gd.eat();
+        
+        Console.ReadLine();
+    }
+}
